@@ -8,8 +8,9 @@ body {
 
 #firstmessage {
   font-type:'Source Sans 3';
-  font-size:58px;
-  padding-top: 80px;
+  font-size:40px;
+  padding: 60px;
+  padding-top: 100px;
   text-align: left;
   background-color:#5c5cd6
 
