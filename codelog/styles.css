@@ -4,3 +4,10 @@
   background: 
     radial-gradient(circle at 30% 30%, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #c2e9fb)
 }
+
+#firstmessage {
+  font-type:'Source Sans 3';
+  font-size:89px;
+  text-align: right;
+
+}
