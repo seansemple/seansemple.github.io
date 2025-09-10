@@ -12,7 +12,9 @@ body {
   padding: 60px;
   padding-top: 100px;
   text-align: left;
-  background-color:#5c5cd6
+  background-color:#5c5cd6;
+  border-radius: 12px;
+  max-width: 80%;
 
 }
 
