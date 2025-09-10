@@ -22,7 +22,7 @@ body {
 }
 
 /* AI GENERATED */
-#firstmessage::after {
+#h1style::after {
   content: "";
   position: absolute;
   left: 22px;           
