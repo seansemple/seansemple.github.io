@@ -17,3 +17,15 @@ body {
   max-width: 60%;
 }
 
+<!-- AI GENERATED -->
+#firstmessage::after {
+  content: "";
+  position: absolute;
+  left: 22px;           
+  bottom: -8px;         
+  width: 18px;
+  height: 18px;
+  background: inherit;  
+  transform: rotate(45deg);
+  border-bottom-left-radius: 12px; 
+
