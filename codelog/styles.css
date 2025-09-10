@@ -11,6 +11,7 @@ body {
   position: relative;
   font-family:'Source Sans 3';
   font-size:30px;
+  color:white;
   padding: 20px 28px;
   margin: 20px 0 24px 20px;
   text-align: left;
@@ -37,6 +38,7 @@ body {
   position: relative;
   font-family:'Source Sans 3';
   font-size:30px;
+  color:white;
   padding: 20px 28px;
   margin:  24px 20px 24px auto;
   text-align: left;
