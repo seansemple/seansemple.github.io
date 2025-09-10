@@ -7,7 +7,7 @@ body {
 }
 
 #firstmessage {
-  posiiton:relative;
+  positon:relative;
   font-family:'Source Sans 3'
   font-size:36px;
   padding: 20px 28px;
@@ -31,8 +31,9 @@ body {
   transform: rotate(45deg);
   border-bottom-left-radius: 12px; 
 
-#secondmessage {
-  posiiton:relative;
+#secondmessage 
+{
+  positon:relative;
   font-family:'Source Sans 3'
   font-size:36px;
   padding: 20px 28px;
