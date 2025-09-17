@@ -39,7 +39,13 @@ p.callout {
 
 
 #row13 {
-    margin-left: calc(100% *5/6);}
+    margin-left: calc(100% *5/6);
+    font-size: .9rem;
+    line-height: 2.5rem;
+    width: 50%;}
 
     #row12{
-    margin-left: calc(100% *5/6);}
+    margin-left: calc(100% *5/6);
+font-size: .9rem;
+    line-height: 2.5rem;
+    width: 50%;}
