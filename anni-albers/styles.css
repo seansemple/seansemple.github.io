@@ -49,3 +49,12 @@ p.callout {
 font-size: .9rem;
     line-height: 2.5rem;
     width: 50%;}
+
+    p.callout2 {
+    font-size: 2.3rem;
+    line-height: auto;
+    font-style: italic;
+    float: right;
+    text-align: right;
+    padding-left: 2em;
+    margin-top:0;
