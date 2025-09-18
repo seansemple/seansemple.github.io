@@ -6,3 +6,10 @@ body {
   font-family: "Source Sans 3", sans-serif;
   
 }
+body {
+  margin: 40px auto;                    
+  width: 600px;                         
+  height: 600px;                      
+  background: rgba(128, 128, 128, 0.15);
+  border-radius: 32px;                  
+}
