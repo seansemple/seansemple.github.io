@@ -57,8 +57,8 @@ font-size: .9rem;
     /*inherit the baseline main code above and add to it */
     #secondLayout main {
         display: grid;
-        grid-template-columns: repeat (6, auto);
-        grid-template-rows: repeat (13, auto);
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(13, auto);
         grid-template-areas:
         'title title title title title title'
         '. p1 p1 . . .'
