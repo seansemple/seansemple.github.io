@@ -10,7 +10,8 @@
   padding: 12px;
 }
 
-#uTitle { grid-area: uTitle; font-weight: bold; line-height: 1.5; }
+#uTitle { grid-area: uTitle; 
+    font-weight: bold; line-height: 1.5; }
 
 #uPx  { grid-area: uPx; }
 #uPt  { grid-area: uPt; }
@@ -20,7 +21,7 @@
 #uVh  { grid-area: uVh; }
 
 #unitsLayout p {
-  background: rgba(128,128,128,.15);
+  background: rgba(158, 34, 230, 0.438); /*/** why won't my color work? **/*/
   border-radius: 10px;
   padding: 12px;
   text-align: center;
