@@ -1,0 +1,27 @@
+#unitsLayout {
+   display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+    "uTitle uTitle uTitle uTitle uTitle uTitle"
+    "uPx    uPt    uEm    uRem   uVw    uVh";
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 12px;
+}
+
+#uTitle { grid-area: uTitle; font-weight: bold; line-height: 1.5; }
+
+#uPx  { grid-area: uPx; }
+#uPt  { grid-area: uPt; }
+#uEm  { grid-area: uEm; }
+#uRem { grid-area: uRem; }
+#uVw  { grid-area: uVw; }
+#uVh  { grid-area: uVh; }
+
+#unitsLayout p {
+  background: rgba(128,128,128,.15);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
