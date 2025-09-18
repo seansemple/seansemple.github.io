@@ -96,3 +96,7 @@ font-size: .9rem;
 #secondLayout #callout3 { grid-area: c3;}
 #secondLayout #callout4 { grid-area: c4;}
 #secondLayout #ATA {grid-area: a1;}
+
+#secondLayout p {
+    width: 100%;
+}
