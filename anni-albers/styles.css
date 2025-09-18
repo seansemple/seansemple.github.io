@@ -58,7 +58,7 @@ font-size: .9rem;
     body#secondlayout main {
         display: grid;
         grid-template-columns: repeat (6, auto);
-        grid-template-row: repeat (13, auto);
+        grid-template-rows: repeat (13, auto);
         grid-template-areas:none;
         'title title title title title title'
         '. p1 p1 . . .'
@@ -66,13 +66,13 @@ font-size: .9rem;
         '. p3 p3 . . .'
         'p4 p4 . . . .'
         '. p5 p5 . c2 c2'
-        'p6 p6 p6 . .'
+        'p6 p6 p6 . . .'
         'p7 p7 p7 . . .'
         '. p8 p8 . c3 c3'
         'p9 p9 . . . .'
         'p10 p10 . . c4 c4'
         '. p11 p11 p11 . .'
-        '. p12 p12 p12 . .'
+        '. p12 p12 p12 . .';
 
     }
 #secondLayout #titleRow { grid-area: title;}
