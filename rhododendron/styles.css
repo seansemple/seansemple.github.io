@@ -18,7 +18,7 @@ header {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: utl("rhodo1.jpg");
+    background-image: url("rhodo1.jpeg");
     background-size: cover;
 }
 
