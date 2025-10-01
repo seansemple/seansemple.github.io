@@ -70,7 +70,7 @@ header {
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
-        '. . title title . '
+        '. title title title . '
         'L1 L1 . . . '
         'L2 L2 . rhodo02 rhodo02'
         'L3 L3 . rhodo02 rhodo02'
