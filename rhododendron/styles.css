@@ -43,6 +43,10 @@ header {
     background-image: url("rhodo2.jpeg");
 }
 
+#title {
+    text-align: center;
+}
+
 @media screen and (orientation: landscape) {
 
     #rhodo1 {
@@ -59,4 +63,18 @@ header {
         width: 45vw;
         color: black;
     }
+}
+#secondLayout main {
+    display: grid
+;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        'title title title title title title'
+        '. p1 p1 . . .'
+        'p2 p2 . . c1 c1'
+        '. p3 p3 . . .'
+        'p4 p4 . . . .'
+        '. p5 p5 . c2 c2'
+        ;
 }
