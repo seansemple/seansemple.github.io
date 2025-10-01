@@ -39,7 +39,7 @@ header {
 
 #rhodo02 {
     max-width: 60%;
-    height: auto;
+    height: 60%;
     background-image: url("rhodo2.jpeg");
     background-size: cover;
 }
@@ -65,24 +65,25 @@ header {
         color: black;
     }
 }
-#secondLayout main {
+#rhodogrid {
     display: grid
 ;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
-        'title title title title title title'
-        '. p1 p1 . . .'
-        'p2 p2 . . c1 c1'
-        '. p3 p3 . . .'
-        'p4 p4 . . . .'
-        '. p5 p5 . c2 c2'
+        '. . title title . .'
+        'p1 p1 . . .'
+        'p2 p2 . rhodo02 rhodo02'
+        'p3 p3 . rhodo02 rhodo02'
+        'p4 p4 . . .'
+        'p5 p5 . . .'
         ;
 }
 
-#secondLayout #titleRow { grid-area: title;}
-#secondLayout #para1 { grid-area: p1; }
-#secondLayout #para2 { grid-area: p2; }
-#secondLayout #para3 { grid-area: p3; }
-#secondLayout #para4 { grid-area: p4; }
-#secondLayout #para5 { grid-area: p5; }
+#rhodogrid #title { grid-area: title;}
+#rhodogrid #l1 { grid-area: l1; }
+#rhodogrid #l2 { grid-area: l2; }
+#rhodogrid #l3 { grid-area: l3; }
+#rhodogrid #l4 { grid-area: l4; }
+#rhodogrid #l5 { grid-area: l5; }
+#rhodogrid #rhodo02 { grid-area:#rhodo02}
