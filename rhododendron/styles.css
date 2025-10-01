@@ -65,25 +65,25 @@ header {
         color: black;
     }
 }
-#rhodogrid {
+#RhodoGrid {
     display: grid
 ;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
         '. . title title . .'
-        'p1 p1 . . .'
-        'p2 p2 . rhodo02 rhodo02'
-        'p3 p3 . rhodo02 rhodo02'
-        'p4 p4 . . .'
-        'p5 p5 . . .'
+        'l1 l1 . . . .'
+        'l2 l2 . rhodo02 rhodo02 rhodo02'
+        'l3 l3 . rhodo02 rhodo02 rhodo02'
+        'l4 l4 . . . .'
+        'l5 l5 . . . .'
         ;
 }
 
-#rhodogrid #title { grid-area: title;}
-#rhodogrid #l1 { grid-area: l1; }
-#rhodogrid #l2 { grid-area: l2; }
-#rhodogrid #l3 { grid-area: l3; }
-#rhodogrid #l4 { grid-area: l4; }
-#rhodogrid #l5 { grid-area: l5; }
-#rhodogrid #rhodo02 { grid-area:rhodo02 }
+#RhodoGrid #title { grid-area: title;}
+#RhodoGrid #l1 { grid-area: l1; }
+#RhodoGrid #l2 { grid-area: l2; }
+#RhodoGrid #l3 { grid-area: l3; }
+#RhodoGrid #l4 { grid-area: l4; }
+#RhodoGrid #l5 { grid-area: l5; }
+#RhodoGrid #rhodo02 { grid-area:rhodo02 }
