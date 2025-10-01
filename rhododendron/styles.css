@@ -41,6 +41,7 @@ header {
     max-width: 60%;
     height: auto;
     background-image: url("rhodo2.jpeg");
+    background-size: cover;
 }
 
 #title {
@@ -78,3 +79,10 @@ header {
         '. p5 p5 . c2 c2'
         ;
 }
+
+#secondLayout #titleRow { grid-area: title;}
+#secondLayout #para1 { grid-area: p1; }
+#secondLayout #para2 { grid-area: p2; }
+#secondLayout #para3 { grid-area: p3; }
+#secondLayout #para4 { grid-area: p4; }
+#secondLayout #para5 { grid-area: p5; }
