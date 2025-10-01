@@ -41,7 +41,7 @@ header {
    width: 50vw;
     left: 50vw;
     background-image: url("rhodo2.jpeg");
-    background-size: full;
+    background-size: contain;
 }
 
 #title {
