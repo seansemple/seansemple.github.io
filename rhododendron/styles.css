@@ -50,5 +50,6 @@ header {
 
     #rhodieTitle h1 {
         width: 45vw;
+        color: white;
     }
 }
