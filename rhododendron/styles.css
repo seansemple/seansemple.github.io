@@ -38,8 +38,8 @@ header {
 }
 
 #rhodo02 {
-    width: 75vw;
-    height: 75vh;
+    max-width: 60%;
+    height: auto;
     background-image: url("rhodo2.jpeg");
 }
 
