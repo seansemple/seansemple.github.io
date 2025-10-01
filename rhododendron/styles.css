@@ -36,10 +36,12 @@ header {
     color: white;
     font-size: 2.5em;
 }
-@media screen and (orientation: landscape){
+@media screen and (orientation: landscape) {
+
     #rhodo1 {
         width: 50vw;
     }
+    
     #rhodieTitle {
     width: 50vw;
     left: 50vw;
