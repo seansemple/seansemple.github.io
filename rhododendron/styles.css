@@ -124,12 +124,5 @@ header {
             'L5 L5 L5 L5 .'
         ;
     }
-
-@media (min-width: 1024px) {
-  #rhodo02 { 
-    width: min(35vw, 700px); 
-    aspect-ratio: 4/3; 
-    background-size: contain; 
 }
 
-}
