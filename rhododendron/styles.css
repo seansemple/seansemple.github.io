@@ -96,6 +96,12 @@ header {
 
 @media screen and (orientation: landscape) {
 
+    #rhodo02 {
+  width: 60vw;
+  height: 45vw;  
+}
+
+
     #rhodo1 {
         width: 50vw;
     }
