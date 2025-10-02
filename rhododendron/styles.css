@@ -1,6 +1,6 @@
 /* mobile-first design for Pacific Rhododenron Layout */
 
-*{
+* {
     box-sizing: border-box;
     font-family: Arial
 }
@@ -38,7 +38,7 @@ header {
 }
 
 #rhodo02 {
-   width: 100vw;
+    width: 100vw;
     height: 80vw;
     left: 70vw;
     background-image: url("rhodo2.jpeg");
@@ -63,16 +63,36 @@ header {
         'L3 L3'
         'L4 L4'
         'L5 L5'
-        ;
+    ;
 }
 
-#RhodoGrid #title { grid-area: title;}
-#RhodoGrid #L1 { grid-area: L1; }
-#RhodoGrid #L2 { grid-area: L2; }
-#RhodoGrid #L3 { grid-area: L3; }
-#RhodoGrid #L4 { grid-area: L4; }
-#RhodoGrid #L5 { grid-area: L5; }
-#RhodoGrid #rhodo02 { grid-area:rhodo02 }
+#RhodoGrid #title {
+    grid-area: title;
+}
+
+#RhodoGrid #L1 {
+    grid-area: L1;
+}
+
+#RhodoGrid #L2 {
+    grid-area: L2;
+}
+
+#RhodoGrid #L3 {
+    grid-area: L3;
+}
+
+#RhodoGrid #L4 {
+    grid-area: L4;
+}
+
+#RhodoGrid #L5 {
+    grid-area: L5;
+}
+
+#RhodoGrid #rhodo02 {
+    grid-area: rhodo02
+}
 
 @media screen and (orientation: landscape) {
 
@@ -91,15 +111,6 @@ header {
         color: black;
     }
 
-#rhodo02 {
-   width: 50vw;
-    height: 50vw;
-    left: 70vw;
-    background-image: url("rhodo2.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
     #RhodoGrid {
         display: grid;
         grid-template-columns: repeat(5, auto);
@@ -111,6 +122,7 @@ header {
             'L3 L3 . rhodo02 .'
             'L4 L4 . rhodo02 .'
             'L5 L5 L5 L5 .'
-            ;
+        ;
     }
+
 }
