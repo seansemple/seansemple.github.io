@@ -117,10 +117,10 @@ header {
         grid-template-rows: repeat(6, auto);
         grid-template-areas:
             '. title title title . '
-            'L1 L1 . rhodo02 .'
-            'L2 L2 . rhodo02 .'
-            'L3 L3 . rhodo02 .'
-            'L4 L4 . rhodo02 .'
+            'L1 L1 rhodo02 rhodo02 .'
+            'L2 L2 rhodo02 rhodo02 .'
+            'L3 L3 rhodo02 rhodo02 .'
+            'L4 L4 rhodo02 rhodo02 .'
             'L5 L5 L5 L5 .'
         ;
     }
