@@ -38,44 +38,31 @@ header {
 }
 
 #rhodo02 {
-   width: 50vw;
+   width: 100vw;
+    height: 20vw;
     left: 50vw;
     background-image: url("rhodo2.jpeg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #title {
     text-align: center;
 }
 
-@media screen and (orientation: landscape) {
-
-    #rhodo1 {
-        width: 50vw;
-    }
-
-    #rhodieTitle {
-    width: 50vw;
-    left: 50vw;
-    background-color: #FFE9EC
-}
-
-    #rhodieTitle h1 {
-        width: 45vw;
-        color: black;
-    }
-}
 #RhodoGrid {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
-        '. title title title . '
-        'L1 L1 . rhodo02 .'
-        'L2 L2 . rhodo02 .'
-        'L3 L3 . rhodo02 .'
-        'L4 L4 . rhodo02 .'
-        'L5 L5 . rhodo02 .'
+        'title title'
+        'L1 L1'
+        'rhodo02 rhodo02'
+        'L2 L2'
+        'L3 L3'
+        'L4 L4'
+        'L5 L5'
         ;
 }
 
@@ -86,3 +73,35 @@ header {
 #RhodoGrid #L4 { grid-area: L4; }
 #RhodoGrid #L5 { grid-area: L5; }
 #RhodoGrid #rhodo02 { grid-area:rhodo02 }
+
+@media screen and (orientation: landscape) {
+
+    #rhodo1 {
+        width: 50vw;
+    }
+
+    #rhodieTitle {
+        width: 50vw;
+        left: 50vw;
+        background-color: #FFE9EC
+    }
+
+    #rhodieTitle h1 {
+        width: 45vw;
+        color: black;
+    }
+
+    #RhodoGrid {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            '. title title title . '
+            'L1 L1 . rhodo02 .'
+            'L2 L2 . rhodo02 .'
+            'L3 L3 . rhodo02 .'
+            'L4 L4 . rhodo02 .'
+            'L5 L5 L5 L5 .'
+            ;
+    }
+}
