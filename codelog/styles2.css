@@ -26,3 +26,9 @@
   padding: 12px;
   text-align: center;
 }
+
+#spacetheme {
+  margin: 0;
+  background-color: #000;
+  color: #eaf3ff;
+}
