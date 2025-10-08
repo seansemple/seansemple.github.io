@@ -1,8 +1,8 @@
 #unitsLayout {
-   display: grid;
-        grid-template-columns: repeat(6, auto);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
     "uTitle uTitle uTitle uTitle uTitle uTitle"
     "uPx    uPt    uEm    uRem   uVw    uVh";
   max-width: 1100px;
@@ -10,19 +10,40 @@
   padding: 12px;
 }
 
-#uTitle { grid-area: uTitle; 
-    font-weight: bold; line-height: 1.5; }
+#uTitle {
+  grid-area: uTitle;
+  font-weight: bold;
+  line-height: 1.5;
+}
 
-#uPx  { grid-area: uPx; }
-#uPt  { grid-area: uPt; }
-#uEm  { grid-area: uEm; }
-#uRem { grid-area: uRem; }
-#uVw  { grid-area: uVw; }
-#uVh  { grid-area: uVh; }
+#uPx {
+  grid-area: uPx;
+}
+
+#uPt {
+  grid-area: uPt;
+}
+
+#uEm {
+  grid-area: uEm;
+}
+
+#uRem {
+  grid-area: uRem;
+}
+
+#uVw {
+  grid-area: uVw;
+}
+
+#uVh {
+  grid-area: uVh;
+}
 
 #unitsLayout p {
-  background: rgba(229, 194, 250, 0.349); /*/** why won't my color work? **/*/
-  border-radius: 10px;
+  background: rgba(229, 194, 250, 0.349);
+  /*/** why won't my color work? **/
+  */ border-radius: 10px;
   padding: 12px;
   text-align: center;
 }
@@ -31,4 +52,10 @@
   margin: 0;
   background-color: #000;
   color: #eaf3ff;
+  background:
+    radial-gradient(90rem 48rem at 75% 20%, rgb(14 165 233 / 18%), transparent 60%),
+    radial-gradient(62rem 34rem at 20% 80%, rgb(96 165 250 / 15%), transparent 65%),
+    radial-gradient(120rem 72rem at 50% 115%, rgb(2 132 199 / 12%), transparent 70%),
+    #000;
+  background-attachment: fixed;
 }
