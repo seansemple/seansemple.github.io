@@ -56,7 +56,6 @@ body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  /* centers children */
   place-items: center;
   color: #eaf3ff;
   background:
