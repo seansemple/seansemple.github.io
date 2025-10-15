@@ -16,20 +16,36 @@
 
 <body id="spacetheme">
 
-  <div id="infobox">
+ <p>
+  <h1>Q1) What are the differences between &lt;img&gt; and CSS background-image?</h1> <br>
+  Meaning: &lt;img&gt; is for content images and should have alt text. <br>
+  Meaning: background-image is for decoration and has no alt text. <br>
+  Code: &lt;img src="photo.jpg" alt="Description"&gt; <br>
+  Code: .box { background-image: url("photo.jpg"); } <br>
+  Layout: &lt;img&gt; takes up space as its own box in the layout. <br>
+  Layout: a background is painted inside an element’s box. the element needs width/height to show it. <br>
+  
+  <h1>Q2) Besides background-image, what CSS properties affect background images?</h1> <br>
+  background-size: controls how big the image is (for example, cover or 150px 100px). <br>
+  background-repeat: repeat the image or not (repeat, repeat-x, repeat-y, no-repeat). <br>
+  background-position: where the image sits in the box (center, top right, 10px 20px). <br>
+  background-attachment: scrolls with the page or stays fixed. <br>
+  background-origin: which box the position is measured from (padding-box, border-box, content-box). <br>
+  background-clip: which area gets painted (border-box, padding-box, content-box). <br>
+  background: shorthand to set several of these at once (you can use the / syntax for size after position). <br>
+  <br>
 
-    <p>
-    <h1>What These Properties Do</h1> <br>
-    Color: sets the text color. <br>
-    Background-color: fills the element's background with a specific color.<br>
-    Border Color: sets the color of the element's border lines.<br>
-    <br>
-    <h1>Ways CSS Accepts Color + Examples<br></h1>
-    Named Color: use keywords like "aliceblue" or "rebeccapurple"<br>
-    Hexadecimal: "&num;ff0000" or shorthand "&num;f00"<br>
-    RGB: Uses color spaces and numbers to determine color specificity; rgb(255, 0, 153) (or modern form rgb (255 0 153 /
-    80%))<br>
-    Other formats may include HSL: hsl(150, 30%, 60%); HWB: hwb(210 20% 10%); Lab: lab(60% 20 30)<br>
+  <h1>Q3) Dimensions vs resolution (one sentence)</h1> <br>
+  Dimensions are the width and height in pixels and resolution is how many pixels there are per unit length. <br>
+  <br>
+
+  <h1>Extra credit: formats (GIF, PNG, JPG/JPEG, WebP, SVG)</h1> <br>
+  GIF: supports simple animations, limited colors, file size can be bigger than newer formats. <br>
+  PNG: lossless, supports transparency, great for crisp edges and UI art. <br>
+  JPG/JPEG: lossy, great for photos, smaller than PNG for photos but not ideal for sharp graphics or text. <br>
+  WebP: modern format, supports lossy and lossless, transparency, and animation, often smaller than JPG/PNG for similar quality. <br>
+  SVG: vector graphics, scale cleanly at any size, great for icons, logos, and diagrams. <br>
+</p>
 
 
 
