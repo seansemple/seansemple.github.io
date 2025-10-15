@@ -22,6 +22,11 @@ body {
     "side"
     "steps"
     "foot";
+  place-items: center;
+}
+
+body>* {
+  width: min(92vw, 640px);
 }
 
 main {
@@ -31,29 +36,26 @@ main {
 header {
   grid-area: mast;
   display: grid;
-  grid-template-columns: 96px 1fr;
-  grid-template-areas:
-    "photo title"
-    "photo tag";
-  gap: 12px 16px;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+header h1,
+header p {
+  margin: 0;
 }
 
 header img {
-  grid-area: photo;
-  width: 96px;
+  width: 140px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
 }
 
-header h1 {
-  grid-area: title;
-  margin: 0;
-}
-
-header p {
-  grid-area: tag;
-  margin: 0;
+h2 {
+  text-align: center;
+  margin: 8px 0;
 }
 
 main>section:first-of-type {
@@ -66,6 +68,7 @@ main>section:last-of-type {
 
 footer {
   grid-area: foot;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -73,17 +76,19 @@ footer {
     gap: 24px;
     grid-template-columns: 1.4fr 1fr;
     grid-template-areas:
-      "mast  side"
+      "mast side"
       "steps steps"
-      "foot  foot";
+      "foot foot";
+    place-items: initial;
+  }
+
+  body>* {
+    width: auto;
   }
 
   header {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title"
-      "photo"
-      "tag";
+    text-align: left;
+    justify-items: stretch;
     gap: 12px;
   }
 
