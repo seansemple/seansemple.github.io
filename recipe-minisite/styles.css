@@ -104,8 +104,8 @@ footer {
 /* define variables */
 :root {
     --nav-height: 2.8rem;
-    --nav-bkgd-color: rgb(8, 8, 94);
-    --nav-text-color: rgb(207, 162, 162);
+    --nav-bkgd-color: rgb(57, 57, 165);
+    --nav-text-color: rgb(234, 230, 235);
     --nav-hover-bkgd-color: lightgray;
     --nav-hover-text-color: black;
 }
