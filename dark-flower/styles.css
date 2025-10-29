@@ -1,0 +1,134 @@
+/* mobile-first design for Pacific Rhododenron Layout */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 10vw;
+    height: 100vh;
+}
+
+#rhodo1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("rhodo1.jpeg");
+    background-size: cover;
+}
+
+#rhodieTitle {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#rhodieTitle h1 {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    color: white;
+    font-size: 2.5em;
+}
+
+#rhodo02 {
+    width: 100vw;
+    height: 80vw;
+    left: 70vw;
+    background-image: url("rhodo2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#title {
+    text-align: center;
+}
+
+#RhodoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        'title title'
+        'L1 L1'
+        'rhodo02 rhodo02'
+        'L2 L2'
+        'L3 L3'
+        'L4 L4'
+        'L5 L5'
+    ;
+}
+
+#RhodoGrid #title {
+    grid-area: title;
+}
+
+#RhodoGrid #L1 {
+    grid-area: L1;
+}
+
+#RhodoGrid #L2 {
+    grid-area: L2;
+}
+
+#RhodoGrid #L3 {
+    grid-area: L3;
+}
+
+#RhodoGrid #L4 {
+    grid-area: L4;
+}
+
+#RhodoGrid #L5 {
+    grid-area: L5;
+}
+
+#RhodoGrid #rhodo02 {
+    grid-area: rhodo02
+}
+
+@media screen and (orientation: landscape) {
+
+    #rhodo02 {
+  width: 60vw;
+  height: 45vw;  
+}
+
+
+    #rhodo1 {
+        width: 50vw;
+    }
+
+    #rhodieTitle {
+        width: 50vw;
+        left: 50vw;
+        background-color: #FFE9EC
+    }
+
+    #rhodieTitle h1 {
+        width: 45vw;
+        color: black;
+    }
+
+
+    #RhodoGrid {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            '. title title title . '
+            'L1 L1 rhodo02 rhodo02 .'
+            'L2 L2 rhodo02 rhodo02 .'
+            'L3 L3 rhodo02 rhodo02 .'
+            'L4 L4 rhodo02 rhodo02 .'
+            'L5 L5 L5 L5 .'
+        ;
+    }
+}
