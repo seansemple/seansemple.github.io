@@ -142,10 +142,10 @@ header {
 }
 
 body.darkMode {
-    background-color: rgb(56, 1, 63);
+    background-color: rgb(24, 2, 27);
     color: white;
 }
 
 body.darkMode h1 {
-    color: rgb(49, 27, 177);
+    color: rgb(196, 186, 252);
 }rgb(255, 0, 200)
