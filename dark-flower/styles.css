@@ -168,7 +168,7 @@ header {
 }
 
 body.darkMode {
-    background-color: darkgrey;
+    background-color: rgb(128, 114, 114);
     color: white;
 }
 
