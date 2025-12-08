@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu for Recipes</title>
+
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+
+    <!-- external and internal JavaScript -->
+    <!-- file renamed to "scripts.js" (plural) after the demo -->
+    <script src="scripts.js" defer></script>
+
+</head>
+
+<body id="indexbody">
+
+    <nav>
+        <a id="navBurger">&#9776;</a>
+
+        <ul>
+            <li><a href="index.html">Appetizers</a></li>
+
+            <li><a href="#">Entrees</a>
+                <ul>
+                    <li><a href="recipe1.html">Muhammara</a></li>
+                    <li><a href="recipe2.html">Rice Crispy Treats</a></li>
+                    <li><a href="recipe3.html">Dill Hummus</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Dessert</a>
+                <ul>
+                    <li><a href="https://www.recipetineats.com/roast-lamb-leg-with-gravy/">Roast Lamb</a></li>
+                    <li><a href="https://www.biggerbolderbaking.com/homemade-mochi-ice-cream/">Homemade Mochi Ice
+                            Cream</a></li>
+                    <li><a href="https://www.loveandoliveoil.com/2022/05/homemade-sour-strawberry-gummies.html">Strawberry
+                            Gummies</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+        <h1>Bon appetit.</h1>
+
+    </main>
+
+</body>
+
+</html>
