@@ -249,3 +249,73 @@ nav>ul>li>ul>li:hover a {
     }
 
 }
+/* === Home / About Me section === */
+
+#home-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+}
+
+.hero-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+.about-card {
+    background-color: #ffffff;
+    padding: 1.75rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.6;
+}
+
+.about-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.about-card p {
+    margin-bottom: 0.9rem;
+}
+
+.about-list {
+    margin: 0 0 1rem 1.2rem;
+    padding: 0;
+}
+
+.about-list li {
+    margin-bottom: 0.35rem;
+}
+
+.about-contact {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 0.75rem;
+}
+
+.about-contact a {
+    text-decoration: underline;
+}
+    
+/* Mobile tweaks */
+@media (max-width: 600px) {
+    .hero-intro h1 {
+        font-size: 2rem;
+    }
+
+    .about-card {
+        padding: 1.5rem 1.25rem;
+    }
