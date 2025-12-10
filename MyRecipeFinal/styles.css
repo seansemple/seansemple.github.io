@@ -364,3 +364,14 @@ nav > ul > li > ul > li:hover a {
     padding: 1.5rem 1.25rem;
   }
 }
+.about-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-img {
+  max-width: 150px;  /* 
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
