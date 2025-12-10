@@ -1,5 +1,3 @@
-/* ---------- Global base styles (for recipe pages by default) ---------- */
-
 * {
   box-sizing: border-box;
 }
@@ -15,7 +13,6 @@ img {
   display: block;
 }
 
-/* Recipe-page grid layout (default body) */
 body {
   display: grid;
   gap: 16px;
@@ -28,7 +25,7 @@ body {
   place-items: center;
 }
 
-body > * {
+body>* {
   width: min(92vw, 640px);
 }
 
@@ -61,11 +58,11 @@ h2 {
   margin: 8px 0;
 }
 
-main > section:first-of-type {
+main>section:first-of-type {
   grid-area: side;
 }
 
-main > section:last-of-type {
+main>section:last-of-type {
   grid-area: steps;
 }
 
@@ -85,7 +82,7 @@ footer {
     place-items: initial;
   }
 
-  body > * {
+  body>* {
     width: auto;
   }
 
@@ -102,9 +99,7 @@ footer {
   }
 }
 
-/* ---------- Responsive navigation menu ---------- */
 
-/* define variables */
 :root {
   --nav-height: 2.8rem;
   --nav-bkgd-color: rgb(57, 57, 165);
@@ -113,23 +108,23 @@ footer {
   --nav-hover-text-color: black;
 }
 
-/* Home page body (index.html) overrides recipe layout */
 #indexbody {
   margin: 0;
   padding: var(--nav-height) 0 0 0;
-  display: block;              /* cancel grid layout on home page */
+  display: block;
+  /* cancel grid layout on home page */
 }
 
-#indexbody > * {
-  width: 100%;                 /* nav and main take full width */
+#indexbody>* {
+  width: 100%;
 }
 
-/* On the home page, main should behave like a normal block */
+
 #indexbody main {
   display: block;
 }
 
-/* Nav bar */
+
 nav {
   position: absolute;
   top: 0;
@@ -156,31 +151,31 @@ nav ul {
   padding: 0;
 }
 
-nav > ul {
+nav>ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
 }
 
-nav.clicked > ul {
+nav.clicked>ul {
   max-height: 90vh;
 }
 
-nav > ul > li {
+nav>ul>li {
   position: relative;
   background-color: var(--nav-bkgd-color);
   display: block;
   margin: 1rem;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   display: block;
   width: 100%;
   height: 100%;
   padding: 0.5rem;
 }
 
-nav > ul > li > a::after {
+nav>ul>li>a::after {
   position: absolute;
   content: "⌄";
   right: 0.3rem;
@@ -189,7 +184,7 @@ nav > ul > li > a::after {
   font-size: 110%;
 }
 
-nav > ul > li > ul {
+nav>ul>li>ul {
   margin: 0 0 0 1rem;
   background-color: inherit;
   max-height: 0;
@@ -197,11 +192,11 @@ nav > ul > li > ul {
   transition: max-height 0.5s;
 }
 
-nav > ul > li.clicked > ul {
+nav>ul>li.clicked>ul {
   max-height: 90vh;
 }
 
-nav > ul > li > ul > li {
+nav>ul>li>ul>li {
   padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
@@ -210,56 +205,55 @@ nav a {
   color: var(--nav-text-color);
 }
 
-nav > ul > li > ul > li:hover {
+nav>ul>li>ul>li:hover {
   background-color: var(--nav-hover-bkgd-color);
 }
 
-nav > ul > li > ul > li:hover a {
+nav>ul>li>ul>li:hover a {
   color: var(--nav-hover-text-color);
 }
 
-/* ----- MEDIA QUERY for landscape/desktop layout ----- */
+
 @media screen and (orientation: landscape) {
   #navBurger {
     display: none;
   }
 
-  nav > ul {
+  nav>ul {
     overflow: visible;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     float: left;
     margin: 0.5rem;
   }
 
-  nav > ul > li a {
+  nav>ul>li a {
     padding-right: 0.5rem;
     margin: 0;
   }
 
-  nav > ul > li > ul {
+  nav>ul>li>ul {
     margin: 0 0.5rem 0.5rem 0;
     visibility: hidden;
     position: absolute;
   }
 
-  nav > ul > li.clicked > ul {
+  nav>ul>li.clicked>ul {
     display: block;
     visibility: visible;
   }
 
-  nav > ul > li > ul li {
+  nav>ul>li>ul li {
     margin: 0;
     white-space: nowrap;
   }
 
-  nav > ul > li > a::after {
+  nav>ul>li>a::after {
     content: "";
   }
 }
 
-/* ---------- Home / About Me section (index.html) ---------- */
 
 #home-main {
   max-width: 900px;
@@ -267,12 +261,13 @@ nav > ul > li > ul > li:hover a {
   padding: 2rem 1rem 4rem;
 }
 
-/* Hero section with background image */
+
 .hero-intro {
   position: relative;
   margin: 0 auto 2rem;
   max-width: 1200px;
-  height: 320px;                       /* adjust as desired */
+  height: 320px;
+
   background-image: url("cookingpage.png");
   background-size: cover;
   background-position: center;
@@ -280,7 +275,7 @@ nav > ul > li > ul > li:hover a {
   border-radius: 12px;
   overflow: hidden;
 
-  /* center text over image */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,7 +284,7 @@ nav > ul > li > ul > li:hover a {
   color: #ffffff;
 }
 
-/* Dark overlay for readability */
+
 .hero-intro::before {
   content: "";
   position: absolute;
@@ -350,7 +345,7 @@ nav > ul > li > ul > li:hover a {
   text-decoration: underline;
 }
 
-/* ---------- Mobile tweaks ---------- */
+
 @media (max-width: 600px) {
   .hero-intro {
     height: 240px;
@@ -364,19 +359,21 @@ nav > ul > li > ul > li:hover a {
     padding: 1.5rem 1.25rem;
   }
 }
+
 .about-img-wrapper {
   display: flex;
   justify-content: center;
 }
 
 .about-me-img {
-  max-width: 380px;  
+  max-width: 380px;
   width: 100%;
   height: auto;
   border-radius: 12px;
 }
+
 .about-me-img2 {
-   max-width: 380px;  
+  max-width: 380px;
   width: 100%;
   height: auto;
   border-radius: 12px;
