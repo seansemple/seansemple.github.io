@@ -50,3 +50,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+/* Row for "Every recipe page includes" + image to the right */
+.about-row {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr; /* x x img img-ish */
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.about-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Stack text and image on smaller screens */
+@media (max-width: 700px) {
+  .about-row {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .about-me-img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
