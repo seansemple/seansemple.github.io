@@ -309,6 +309,25 @@ nav>ul>li>ul>li:hover a {
 .about-contact a {
     text-decoration: underline;
 }
+
+/* Override recipe-page grid layout on the home page */
+#indexbody {
+    display: block;            
+}
+
+#indexbody > * {
+    width: 100%;               
+}
+
+#home-main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-intro h1 {
+    text-align: center;
+}
+
     
 /* Mobile tweaks */
 @media (max-width: 600px) {
