@@ -6,7 +6,6 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* background inspired by #spacetheme */
 body {
   display: grid;
   place-items: center;
@@ -19,7 +18,6 @@ body {
   background-attachment: fixed;
 }
 
-/* card container */
 #infobox {
   width: min(90vw, 720px);
   padding: 1.25rem 1.5rem;
