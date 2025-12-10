@@ -1,0 +1,65 @@
+/* basic layout + typography */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* background inspired by #spacetheme */
+body {
+  display: grid;
+  place-items: center;
+  color: #eaf3ff;
+  background:
+    radial-gradient(90rem 48rem at 75% 20%, rgb(14 165 233 / 18%), transparent 60%),
+    radial-gradient(62rem 34rem at 20% 80%, rgb(96 165 250 / 15%), transparent 65%),
+    radial-gradient(120rem 72rem at 50% 115%, rgb(2 132 199 / 12%), transparent 70%),
+    #000;
+  background-attachment: fixed;
+}
+
+/* card container */
+#infobox {
+  width: min(90vw, 720px);
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #0b1220;
+}
+
+/* headings */
+h1 {
+  margin-top: 0;
+  font-size: 2.25rem;
+}
+
+h2 {
+  margin-top: 1.75rem;
+  font-size: 1.4rem;
+}
+
+/* links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* lists */
+ul {
+  padding-left: 1.25rem;
+}
+
+/* horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 1.25rem 0;
+}
