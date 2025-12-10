@@ -297,7 +297,6 @@ nav > ul > li > ul > li:hover a {
   background: rgba(0, 0, 0, 0.35);
 }
 
-/* Make sure text sits above overlay */
 .hero-intro h1,
 .hero-intro .hero-tagline {
   position: relative;
