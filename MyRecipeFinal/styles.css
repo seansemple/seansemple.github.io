@@ -1,3 +1,5 @@
+/* ---------- Global base styles (for recipe pages by default) ---------- */
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +15,7 @@ img {
   display: block;
 }
 
+/* Recipe-page grid layout (default body) */
 body {
   display: grid;
   gap: 16px;
@@ -25,7 +28,7 @@ body {
   place-items: center;
 }
 
-body>* {
+body > * {
   width: min(92vw, 640px);
 }
 
@@ -58,11 +61,11 @@ h2 {
   margin: 8px 0;
 }
 
-main>section:first-of-type {
+main > section:first-of-type {
   grid-area: side;
 }
 
-main>section:last-of-type {
+main > section:last-of-type {
   grid-area: steps;
 }
 
@@ -82,7 +85,7 @@ footer {
     place-items: initial;
   }
 
-  body>* {
+  body > * {
     width: auto;
   }
 
@@ -99,242 +102,266 @@ footer {
   }
 }
 
-/* CSS for responsive menu demo */
+/* ---------- Responsive navigation menu ---------- */
 
 /* define variables */
 :root {
-    --nav-height: 2.8rem;
-    --nav-bkgd-color: rgb(57, 57, 165);
-    --nav-text-color: rgb(234, 230, 235);
-    --nav-hover-bkgd-color: lightgray;
-    --nav-hover-text-color: black;
+  --nav-height: 2.8rem;
+  --nav-bkgd-color: rgb(57, 57, 165);
+  --nav-text-color: rgb(234, 230, 235);
+  --nav-hover-bkgd-color: lightgray;
+  --nav-hover-text-color: black;
 }
 
-* {
-    box-sizing: border-box;
-}
-
+/* Home page body (index.html) overrides recipe layout */
 #indexbody {
-    margin: 0;
-    padding: var(--nav-height) 0 0 0;
+  margin: 0;
+  padding: var(--nav-height) 0 0 0;
+  display: block;              /* cancel grid layout on home page */
 }
 
+#indexbody > * {
+  width: 100%;                 /* nav and main take full width */
+}
+
+/* On the home page, main should behave like a normal block */
+#indexbody main {
+  display: block;
+}
+
+/* Nav bar */
 nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--nav-height);
-    background-color: var(--nav-bkgd-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--nav-bkgd-color);
 }
 
 #navBurger {
-    position: relative;
-    display: block;
-    font-size: 2rem;
-    color: var(--nav-text-color);
-    padding: 0.1em 0 0 0.3em;
-    max-height: 2rem;
+  position: relative;
+  display: block;
+  font-size: 2rem;
+  color: var(--nav-text-color);
+  padding: 0.1em 0 0 0.3em;
+  max-height: 2rem;
 }
 
 nav ul {
-    position: relative;
-    background-color: var(--nav-bkgd-color);
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  background-color: var(--nav-bkgd-color);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav>ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
+nav > ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 
-nav.clicked>ul {
-    max-height: 90vh;
+nav.clicked > ul {
+  max-height: 90vh;
 }
 
-nav>ul>li {
-    position: relative;
-    background-color: var(--nav-bkgd-color);
-    display: block;
-    margin: 1rem;
+nav > ul > li {
+  position: relative;
+  background-color: var(--nav-bkgd-color);
+  display: block;
+  margin: 1rem;
 }
 
-nav>ul>li>a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
+nav > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
 }
 
-nav>ul>li>a::after {
-    position: absolute;
-    content: "⌄";
-    right: 0.3rem;
-    top: 0.2rem;
-    color: inherit;
-    font-size: 110%;
+nav > ul > li > a::after {
+  position: absolute;
+  content: "⌄";
+  right: 0.3rem;
+  top: 0.2rem;
+  color: inherit;
+  font-size: 110%;
 }
 
-nav>ul>li>ul {
-    margin: 0 0 0 1rem;
-    background-color: inherit;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
+nav > ul > li > ul {
+  margin: 0 0 0 1rem;
+  background-color: inherit;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 
-nav>ul>li.clicked>ul {
-    max-height: 90vh;
+nav > ul > li.clicked > ul {
+  max-height: 90vh;
 }
 
-nav>ul>li>ul>li {
-    padding: 0.5rem 0 0.5rem 0.5rem;
+nav > ul > li > ul > li {
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--nav-text-color);
+  text-decoration: none;
+  color: var(--nav-text-color);
 }
 
-nav>ul>li>ul>li:hover {
-    background-color: var(--nav-hover-bkgd-color);
+nav > ul > li > ul > li:hover {
+  background-color: var(--nav-hover-bkgd-color);
 }
 
-nav>ul>li>ul>li:hover a {
-    color: var(--nav-hover-text-color);
+nav > ul > li > ul > li:hover a {
+  color: var(--nav-hover-text-color);
 }
 
 /* ----- MEDIA QUERY for landscape/desktop layout ----- */
 @media screen and (orientation: landscape) {
+  #navBurger {
+    display: none;
+  }
 
-    #navBurger {
-        display: none;
-    }
+  nav > ul {
+    overflow: visible;
+  }
 
-    nav>ul {
-        overflow: visible;
-    }
+  nav > ul > li {
+    float: left;
+    margin: 0.5rem;
+  }
 
-    nav>ul>li {
-        float: left;
-        margin: 0.5rem;
-    }
+  nav > ul > li a {
+    padding-right: 0.5rem;
+    margin: 0;
+  }
 
-    nav>ul>li a {
-        padding-right: 0.5rem;
-        margin: 0;
-    }
+  nav > ul > li > ul {
+    margin: 0 0.5rem 0.5rem 0;
+    visibility: hidden;
+    position: absolute;
+  }
 
-    nav>ul>li>ul {
-        margin: 0 0.5rem 0.5rem 0;
-        visibility: hidden;
-        position: absolute;
-    }
+  nav > ul > li.clicked > ul {
+    display: block;
+    visibility: visible;
+  }
 
-    nav>ul>li.clicked>ul {
-        display: block;
-        visibility: visible;
-    }
+  nav > ul > li > ul li {
+    margin: 0;
+    white-space: nowrap;
+  }
 
-    nav>ul>li>ul li {
-        margin: 0;
-        white-space: nowrap;
-    }
-
-    nav>ul>li>a::after {
-        content: "";
-    }
-
+  nav > ul > li > a::after {
+    content: "";
+  }
 }
-/* === Home / About Me section === */
+
+/* ---------- Home / About Me section (index.html) ---------- */
 
 #home-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
 }
 
+/* Hero section with background image */
 .hero-intro {
-    text-align: center;
-    margin-bottom: 2rem;
+  position: relative;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+  height: 320px;                       /* adjust as desired */
+  background-image: url("cookingpage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  overflow: hidden;
+
+  /* center text over image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Dark overlay for readability */
+.hero-intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Make sure text sits above overlay */
+.hero-intro h1,
+.hero-intro .hero-tagline {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-tagline {
-    text-align: center;
-    font-size: 1rem;
-    opacity: 0.85;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
 .about-card {
-    background-color: #ffffff;
-    padding: 1.75rem 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    line-height: 1.6;
+  background-color: #ffffff;
+  padding: 1.75rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
 }
 
 .about-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .about-card p {
-    margin-bottom: 0.9rem;
+  margin-bottom: 0.9rem;
 }
 
 .about-list {
-    margin: 0 0 1rem 1.2rem;
-    padding: 0;
+  margin: 0 0 1rem 1.2rem;
+  padding: 0;
 }
 
 .about-list li {
-    margin-bottom: 0.35rem;
+  margin-bottom: 0.35rem;
 }
 
 .about-contact {
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    padding-top: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 0.75rem;
 }
 
 .about-contact a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Override recipe-page grid layout on the home page */
-#indexbody {
-    display: block;            
-}
-
-#indexbody > * {
-    width: 100%;               
-}
-
-#home-main {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hero-intro h1 {
-    text-align: center;
-}
-
-    
-/* Mobile tweaks */
+/* ---------- Mobile tweaks ---------- */
 @media (max-width: 600px) {
-    .hero-intro h1 {
-        font-size: 2rem;
-    }
+  .hero-intro {
+    height: 240px;
+  }
 
-    .about-card {
-        padding: 1.5rem 1.25rem;
-    }
+  .hero-intro h1 {
+    font-size: 2rem;
+  }
+
+  .about-card {
+    padding: 1.5rem 1.25rem;
+  }
+}
